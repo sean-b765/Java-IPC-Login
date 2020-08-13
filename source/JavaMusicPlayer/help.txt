@@ -1,0 +1,27 @@
+
+
+			TUTORIAL
+
+
+Adding a Playlist
+	This can be done by locating the top-left most text box, 
+	and typing in the playlist name. Click '+ Add' to make the playlist.
+
+Adding Songs
+	Locate the 'Add Songs' button near the top-right. This will open a file browser, 
+	where you can select multiple mp3 files to add.
+
+Removing Songs
+	Right-click on a song in the playlist. Click 'Remove from [playlist]'.
+
+Queueing Songs
+	Right-click a song, and add or remove from the song queue. 
+	The queue can be viewed by clicking 'Show Queue' button on the right. Clicking this again will change back to Song Info.
+
+Sorting the Playlist
+	Can be done by selecting a playlist and clicking 'Sort' at the bottom.
+
+Searching for Song
+	Can be done by typing in the text field at the top of the playlist.
+	This will search your song library (the title must be exact!)
+

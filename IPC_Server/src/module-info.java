@@ -1,2 +1,0 @@
-module IPC_Server {
-}

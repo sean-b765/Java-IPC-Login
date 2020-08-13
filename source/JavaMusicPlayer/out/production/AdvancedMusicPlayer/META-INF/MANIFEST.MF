@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: client.Client
+Class-Path: mp3agic-0.9.1.jar opencsv-5.1.jar src.zip javafx-swt.jar jav
+ afx.web.jar javafx.base.jar javafx.fxml.jar javafx.media.jar javafx.swi
+ ng.jar javafx.controls.jar javafx.graphics.jar
+

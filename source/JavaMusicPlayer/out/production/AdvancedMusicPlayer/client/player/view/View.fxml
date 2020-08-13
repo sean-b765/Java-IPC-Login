@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="anchorPane" minHeight="455.0" minWidth="687.0" prefHeight="455.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.player.controller.Controller">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="400.0" minWidth="220.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="playLists" layoutX="-13.0" layoutY="78.0" prefHeight="508.0" prefWidth="240.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0" />
+                  <TextField fx:id="playlistName" layoutY="1.0" prefHeight="26.0" prefWidth="174.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0" />
+                  <Button fx:id="addPlaylist" layoutX="5.0" layoutY="37.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="62.0" text="+ New" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="37.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="audioPane" minHeight="160.0" minWidth="400.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="currentPlaylist" layoutX="95.0" layoutY="36.0" minWidth="240.0" prefHeight="295.0" prefWidth="281.0" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="176.0" AnchorPane.topAnchor="36.0" />
+                  <Button fx:id="addSongs" layoutX="310.0" layoutY="6.0" mnemonicParsing="false" text="Add Songs" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="6.0" />
+                  <ProgressBar fx:id="progress" layoutX="6.0" layoutY="369.0" prefHeight="20.0" prefWidth="466.0" progress="0.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="5.0" />
+                  <TextArea fx:id="songInfo" editable="false" layoutX="306.0" layoutY="40.0" prefHeight="209.0" prefWidth="165.0" wrapText="true" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="40.0" />
+                  <ToggleButton fx:id="repeat" layoutX="276.0" layoutY="337.0" minWidth="46.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Repeat" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="100.0" />
+                  <ToggleButton fx:id="shuffle" layoutX="366.0" layoutY="337.0" minWidth="46.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="81.0" text="Shuffle" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="10.0" />
+                  <Slider fx:id="volume" blockIncrement="5.0" layoutX="295.0" layoutY="386.0" prefHeight="24.0" prefWidth="220.0" value="50.0" AnchorPane.bottomAnchor="43.0" AnchorPane.rightAnchor="9.0" />
+                  <Button fx:id="settingsAccess" layoutX="402.0" layoutY="6.0" mnemonicParsing="false" text="Settings" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                  <Button fx:id="playPause" layoutX="7.0" layoutY="383.0" minWidth="46.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" text="Play" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="7.0" />
+                  <Button fx:id="next" layoutX="153.0" layoutY="383.0" minWidth="46.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" text="&gt;&gt;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="153.0" />
+                  <Button fx:id="previous" layoutX="80.0" layoutY="383.0" minWidth="46.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="69.0" text="&lt;&lt;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="80.0" />
+                  <ListView fx:id="pQueue" layoutX="290.0" layoutY="49.0" prefHeight="209.0" prefWidth="165.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="40.0" />
+                  <ToggleButton fx:id="showQueue" layoutX="334.0" layoutY="297.0" minWidth="46.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="110.0" text="Song Queue" AnchorPane.bottomAnchor="125.0" AnchorPane.rightAnchor="10.0" />
+                  <Button fx:id="sort" layoutX="213.0" layoutY="338.0" mnemonicParsing="false" prefHeight="32.0" text="Sort" AnchorPane.bottomAnchor="84.0" AnchorPane.rightAnchor="190.0" />
+                  <Label fx:id="songLabel" layoutX="12.0" layoutY="350.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="12.0" />
+                  <TextField fx:id="search" layoutX="3.0" layoutY="4.0" prefHeight="26.0" prefWidth="206.0" promptText="Search" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="4.0" />
+                  <Label fx:id="currentSong" layoutX="4.0" layoutY="349.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="4.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

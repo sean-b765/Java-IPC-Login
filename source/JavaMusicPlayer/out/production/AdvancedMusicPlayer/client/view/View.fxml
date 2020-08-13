@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="430.0" maxWidth="478.0" minHeight="430.0" minWidth="478.0" prefHeight="430.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.Controller">
+   <children>
+      <Button fx:id="login" layoutX="154.0" layoutY="210.0" mnemonicParsing="false" text="Log Me In" />
+      <Label fx:id="serverStatus" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="213.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label fx:id="loginStatus" layoutX="14.0" layoutY="399.0" prefHeight="17.0" prefWidth="213.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <TextField fx:id="user" layoutX="114.0" layoutY="97.0" />
+      <TextField fx:id="pass" layoutX="114.0" layoutY="154.0" />
+      <Label layoutX="114.0" layoutY="80.0" text="Username" />
+      <Label layoutX="114.0" layoutY="137.0" text="Password" />
+      <Button fx:id="connect" layoutX="14.0" layoutY="97.0" mnemonicParsing="false" text="Connect" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="97.0" />
+      <Pane fx:id="accessPane" layoutX="292.0" layoutY="37.0" prefHeight="359.0" prefWidth="166.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="37.0">
+         <children>
+            <Button fx:id="addUser" layoutX="51.0" layoutY="72.0" mnemonicParsing="false" text="Add User" />
+            <Button fx:id="openPlayer" layoutX="42.0" layoutY="227.0" mnemonicParsing="false" text="Music Player" />
+            <Label fx:id="admin" layoutX="62.0" layoutY="43.0" text="[Admin]" />
+            <Label fx:id="all" layoutX="57.0" layoutY="199.0" text="[All Users]" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
